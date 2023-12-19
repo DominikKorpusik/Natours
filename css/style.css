@@ -7,6 +7,10 @@ Dark green: #28b485
 
 */
 
+/**************************/
+/*      GLOBAL        */
+/**************************/
+
 *,
 *::before,
 *::after {
@@ -27,46 +31,6 @@ body {
   padding: 3rem;
 
   box-sizing: border-box;
-}
-
-/**************************/
-/*      HEADER        */
-/**************************/
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.75),
-      rgba(40, 180, 133, 0.75)
-    ),
-    url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-
-  /* The clip-path property in CSS is used to define a specific region of an element to display, effectively "clipping" the element into a certain shape. The rest of the element outside this region will be hidden. */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
-  position: relative;
-}
-
-.logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.logo {
-  height: 3.5rem;
-}
-
-.text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-
-  text-align: center;
 }
 
 .heading-primary {
@@ -122,7 +86,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
@@ -140,7 +104,7 @@ body {
   transition: all 200ms ease;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
@@ -149,9 +113,49 @@ body {
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 500ms ease-out 0.4s;
   animation-fill-mode: backwards;
+}
+
+/**************************/
+/*      HEADER        */
+/**************************/
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.75),
+      rgba(40, 180, 133, 0.75)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+
+  /* The clip-path property in CSS is used to define a specific region of an element to display, effectively "clipping" the element into a certain shape. The rest of the element outside this region will be hidden. */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  position: relative;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 3.5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+
+  text-align: center;
 }
 
 /**************************/
