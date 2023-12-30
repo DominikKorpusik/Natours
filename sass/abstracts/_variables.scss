@@ -44,6 +44,23 @@ $gradient-blue: linear-gradient(
   $color-tertiary-dark
 );
 
+$gradient-green-85: linear-gradient(
+  to right bottom,
+  rgba($color-primary-light, 0.85),
+  rgba($color-primary-dark, 0.85)
+);
+
+$gradient-orange-85: linear-gradient(
+  to right bottom,
+  rgba($color-secondary-light, 0.85),
+  rgba($color-secondary-dark, 0.85)
+);
+
+$gradient-blue-85: linear-gradient(
+  to right bottom,
+  rgba($color-tertiary-light, 0.85),
+  rgba($color-tertiary-dark, 0.85)
+);
 // FONT
 
 $default-font-size: 1.6rem;
