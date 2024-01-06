@@ -55,7 +55,7 @@
       <div class="header__logo-box">
         <a href="#">
           <img
-            src="public/img/logo-white.png"
+            src="img/logo-white.png"
             alt="Natours logo"
             class="header__logo"
           />
@@ -108,20 +108,46 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="/public/img/nat-1-large.jpg"
+                src="/img/nat-1-large.jpg"
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                alt="A serene landscape showcases the towering grandeur of a cliff face, reflected in the still waters of a forest-lined river."
+                class="composition__photo composition__photo--p1"
+              />
+
+              <img
+                src="/img/nat-2-large.jpg"
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                src="/img/nat-2-large.jpg"
+                alt="A solitary cyclist journeys along a winding road through rolling hills under a sky painted with soft evening clouds."
+                class="composition__photo composition__photo--p2"
+              />
+
+              <img
+                src="/img/nat-3-large.jpg"
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                src="/img/nat-3-large.jpg"
+                alt="A hiker traverses a narrow mountain ridge, the golden light of sunset casting a warm glow over the verdant valleys below."
+                class="composition__photo composition__photo--p3"
+              />
+              <!-- 
+              <img
+                src="/img/nat-1-large.jpg"
                 alt="A serene landscape showcases the towering grandeur of a cliff face, reflected in the still waters of a forest-lined river."
                 class="composition__photo composition__photo--p1"
               />
               <img
-                src="/public/img/nat-2-large.jpg"
+                src="/img/nat-2-large.jpg"
                 alt="A solitary cyclist journeys along a winding road through rolling hills under a sky painted with soft evening clouds."
                 class="composition__photo composition__photo--p2"
               />
               <img
-                src="/public/img/nat-3-large.jpg"
+                src="/img/nat-3-large.jpg"
                 alt="A hiker traverses a narrow mountain ridge, the golden light of sunset casting a warm glow over the verdant valleys below."
                 class="composition__photo composition__photo--p3"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -318,7 +344,7 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                src="/public/img/nat-8.jpg"
+                src="/img/nat-8.jpg"
                 alt="A woman in a red life jacket paddles a canoe on a serene, blue mountain lake at dusk, surrounded by forested hills."
                 class="story__img"
               />
@@ -341,7 +367,7 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                src="/public/img/nat-9.jpg"
+                src="/img/nat-9.jpg"
                 alt="A man in a light blue shirt and khaki pants stands on a rocky outcrop, gazing at a distant mountain peak above the clouds during sunrise."
                 class="story__img"
               />
@@ -434,11 +460,22 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img
-          src="public/img/logo-green-2x.png"
-          alt="Full logo"
-          class="footer__logo u-margin-bottom-medium"
-        />
+        <picture class="footer__logo u-margin-bottom-medium">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            src="img/logo-green-2x.png"
+            alt="Full logo"
+            class="u-margin-bottom-medium"
+          />
+        </picture>
+
         <div class="row">
           <div class="col-1-of-2">
             <div class="footer__navigation">
@@ -472,12 +509,12 @@
       <div class="popup__content">
         <div class="popup__left">
           <img
-            src="public/img/nat-8.jpg"
+            src="img/nat-8.jpg"
             alt="A woman in a red life jacket paddles a canoe on a serene, blue mountain lake at dusk, surrounded by forested hills."
             class="popup__img"
           />
           <img
-            src="public/img/nat-9.jpg"
+            src="img/nat-9.jpg"
             alt="A man in a light blue shirt and khaki pants stands on a rocky outcrop, gazing at a distant mountain peak above the clouds during sunrise."
             class="popup__img"
           />
