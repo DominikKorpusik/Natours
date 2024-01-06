@@ -1,5 +1,9 @@
 .section-about {
   padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .section-features {
@@ -13,20 +17,39 @@
   background-size: cover;
 
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  }
 }
 
 .section-tours {
-  padding: 15rem 0;
+  padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem;
+    // padding-bottom: 5rem;
+  }
 }
 
 .section-stories {
   position: relative;
   padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-booking {
   padding: 15rem 0;
   background-image: $gradient-green;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .book {
@@ -41,10 +64,35 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
 
-  height: 50rem;
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(/public/img/nat-10.jpg);
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 100%
+      ),
+      url(/public/img/nat-10.jpg);
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 }
