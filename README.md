@@ -9,7 +9,7 @@
     <br />
    Natours => a company offering exciting tours for adventurous people.<br />
     <br />
-    <a href="https://dk-worldwise.netlify.app/" target="_blank">View Demo</a>
+    <a href="https://dk-natours.netlify.app/" target="_blank">View Demo</a>
    
   </p>
 </div>
